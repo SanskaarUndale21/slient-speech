@@ -55,9 +55,9 @@ from fastapi import FastAPI, WebSocket, WebSocketDisconnect, UploadFile, File, H
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
-import config as cfg
-import vsr
-import llm
+from . import config as cfg
+from . import vsr
+from . import llm
 
 # ── logging ───────────────────────────────────────────────────────────────────
 logging.basicConfig(

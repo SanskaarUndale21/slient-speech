@@ -11,7 +11,7 @@ import logging
 from ollama import AsyncClient
 from pydantic import BaseModel
 
-import config as cfg
+from . import config as cfg
 
 logger = logging.getLogger(__name__)
 
